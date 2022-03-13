@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="big-image">
+      <div class="dark-overlay">
+        <h1>What do you think about our Ferrari's?</h1>
+        <h2>Thank you for taking your time to improve our cars</h2>
+        <form action="dump-page.html" method="post" id="survey">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email"  placeholder="Enter your email" required><br><br>
+          <label for="number">Age (optional)</label><br>
+          <input type="number" name="age" id="age" value="21" min="18" max="70"><br><br>
+          <label for="vervoer">Which option suits you the most?</label><br>
+          <select name="transport" id="transport"><br><br>
+            <option value="car">Car</option>
+            <option value="motorcycle">Motorcycle</option>
+            <option value="bicycle">Bicycle</option>
+            <option value="aeroplane">Aeroplane</option>
+          </select><br><br>
+          <div id="radio">
+            <label for="radio">Would you buy a Ferrari?</label><br><br>
+            <input type="radio" name="question" id="radio">
+            <label for="radio">Yes</label><br>
+          </div>
+          <div>
+            <input type="radio" name="question" id="radio">
+            <label for="radio">No</label><br>
+            </div>
+          <div>
+            <input type="radio" name="question" id="radio">
+            <label for="radio">Maybe</label><br>
+          </div>
+          <div>
+            <input type="radio" name="question" id="radio" checked>
+            <label for="radio">Too Expensive Cowboy</labe><br><br>
+          </div>
+          <label for="car">What is your favorite Ferrari?</label><br>
+          <select name="fav-car" id="car">
+            <option value="f40">F40</option>
+            <option value="f50">F50</option>
+            <option value="spyder">Spyder</option>
+            <option value="812">812-Superfast</option>
+          </select><br><br>
+          <label for="better">What do you value most about Ferrari's?</label><br>
+          <div id="checkbox">
+            <input type="checkbox" id="better">
+            <label for="better">Sound</label><br>
+            <input type="checkbox" id="better">
+            <label for="better">Feel</label><br>
+            <input type="checkbox" id="better">
+            <label for="better">Luxury</label><br>
+            <input type="checkbox" id="better">
+            <label for="better">Exclusiveness</label><br><br>
+          </div>
+          <label for="textbox">What would you like to let us know futhermore?</label><br>
+          <textarea name="" id="textbox" rows="5" cols="45" placeholder="Enter your comment here..."></textarea><br><br>
+          <input id="button" type="button" value="Submit">
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+.big-image {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-image: url(/images/ferrari.jpg);
+  background-position: 50% 50%;
+}
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+h1, h2 {
+  margin: 15px;
+
+}
+
+#survey {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 500px;
+  background: rgba(190, 1, 1, 0.35);
+  border-radius: 10px;
+  padding: 30px;
+  color: #fff;
+  font-size: 18px;
+  margin: 10px;
+  
+}
+#checkbox {
+  flex-direction: row;
+
+}
+
+#button {
+  background: rgba(255, 238, 0, 0.911);
+  padding: 10px;
+  font-size: 18px;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+#button:hover {
+  background: rgba(255, 238, 0, 1);
+}
